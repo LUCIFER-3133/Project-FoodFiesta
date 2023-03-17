@@ -13,26 +13,26 @@ const FooterContainer = () => {
     <section className="w-full h-auto bg-indigo-900">
       <div className="mt-10">
         <ul className="flex items-center justify-center gap-5 text-2xl text-white">
-          <li className="border border-white p-1 hover:bg-white hover:text-indigo-900">
+          <li className="cursor-pointer border border-white p-1 hover:bg-white hover:text-indigo-900">
             <FaFacebookF />
           </li>
-          <li className="border border-white p-1 hover:bg-white hover:text-indigo-900">
+          <li className="cursor-pointer border border-white p-1 hover:bg-white hover:text-indigo-900">
             <FaInstagram />
           </li>
-          <li className="border border-white p-1 hover:bg-white hover:text-indigo-900">
+          <li className="cursor-pointer border border-white p-1 hover:bg-white hover:text-indigo-900">
             <FaTwitter />
           </li>
-          <li className="border border-white p-1 hover:bg-white hover:text-indigo-900">
+          <li className="cursor-pointer border border-white p-1 hover:bg-white hover:text-indigo-900">
             <FaLinkedinIn />
           </li>
-          <li className="border border-white p-1 hover:bg-white hover:text-indigo-900">
+          <li className="cursor-pointer border border-white p-1 hover:bg-white hover:text-indigo-900">
             <FaPinterestP />
           </li>
         </ul>
       </div>
 
-      <div className="flex mt-10 mb-5 justify-between">
-        <p className="flex text-white p-4 gap-2">
+      <div className="flex flex-col md:flex-row mt-10 mb-5 justify-between text-sm md:text-lg">
+        <p className="flex text-white p-4 md:p-4 gap-1 md:gap-2 ">
           Created By :
           <div className="flex flex-col items-center">
             <span>Ishan Patel</span>
