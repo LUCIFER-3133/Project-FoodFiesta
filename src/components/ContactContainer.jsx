@@ -1,5 +1,7 @@
 import React from "react";
 
+import ContactHendler from "../utils/contact.php";
+
 const ContactContainer = () => {
   return (
     <section id="contact" className="p-16">
@@ -23,14 +25,14 @@ const ContactContainer = () => {
       <div className="mt-6">
         <div className="max-w-2xl md:m-auto m-8">
           <form
-            action="https://formspree.io/f/mzbqdkqk"
+            action={ContactHendler}
             method="POST"
             className="flex flex-col gap-3"
           >
             <input
               type="text"
-              placeholder="username"
-              name="username"
+              placeholder="Enter your name"
+              name="name"
               required
               autoComplete="off"
               className="p-2 "
@@ -38,15 +40,15 @@ const ContactContainer = () => {
 
             <input
               type="email"
-              name="Email"
-              placeholder="Email"
+              name="email"
+              placeholder="Enter email address"
               autoComplete="off"
               className="p-2 "
               required
             />
 
             <textarea
-              name="Message"
+              name="message"
               cols="30"
               rows="10"
               required
@@ -55,11 +57,12 @@ const ContactContainer = () => {
               className="p-2 "
             ></textarea>
 
-            <input
+            <button
               className="cursor-pointer text-white bg-indigo-500 p-3 hover:bg-indigo-600"
               type="submit"
-              value="send"
-            />
+            >
+              Send Meaasge
+            </button>
           </form>
         </div>
       </div>
