@@ -8,7 +8,6 @@ import { actionType } from "../context/reducer";
 import EmptyCart from "../img/emptyCart.svg";
 import CartItem from "./CartItem";
 
-import Header from "./Header";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { app } from "../firebase.config";
 
@@ -47,12 +46,6 @@ const CartContainer = () => {
 
   const toggleCheckout = () => {
     setCheckout(!checkout);
-  };
-
-  const [confirm, setConfirm] = useState(false);
-
-  const toggleConfirm = () => {
-    setConfirm(!confirm);
   };
 
   const firebaseAuth = getAuth(app);
@@ -170,7 +163,7 @@ const CartContainer = () => {
       {checkout && (
         <div className="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 z-[101] ">
           <div className="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50">
-            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white p-4  min-w-[300px] ">
+            <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white p-4 w-full md:w-[800px] ">
               <div className="flex justify-end">
                 <button
                   onClick={toggleCheckout}
@@ -215,25 +208,24 @@ const CartContainer = () => {
                 </div>
               </div>
               <form
-                // method="POST"
-                className="flex flex-col gap-3 w-[100vh] mt-4"
+                action="https://formspree.io/f/mzbqdkqk"
+                method="POST"
+                className="flex flex-col gap-3 w-full md:w-[750px] mt-2"
               >
                 <input
                   type="text"
-                  placeholder="name"
-                  name="username"
+                  placeholder="Enter your name"
+                  name="name"
                   required
                   className="p-2 "
                 />
-
                 <input
                   type="text"
-                  name="address"
+                  name="Enter your address"
                   placeholder="address"
                   className="p-2 "
                   required
                 />
-
                 <input
                   type="number"
                   name="phone"
@@ -242,36 +234,17 @@ const CartContainer = () => {
                   className="p-2 "
                   required
                 />
+                <button
+                  type="submit"
+                  className="cursor-pointer w-full text-white bg-indigo-500 p-3 mt-2 hover:bg-indigo-600"
+                >
+                  Confirm
+                </button>
               </form>
-              <button
-                onClick={toggleConfirm}
-                className="cursor-pointer w-full text-white bg-indigo-500 p-3 mt-3 hover:bg-indigo-600"
-              >
-                Confirm
-              </button>
-              <h2 className="mt-3 text-red-600">
+
+              <h2 className="mt-2 text-red-600">
                 **Only cash on delivery available
               </h2>
-            </div>
-          </div>
-        </div>
-      )}
-      ,
-      {confirm && (
-        <div className="w-screen h-screen fixed top-0 left-0 right-0 bottom-0 z-[101] bg-black bg-opacity-50 ">
-          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white p-4  min-w-[300px]">
-            <div className="flex flex-col items-center justify-center gap-4">
-              <h2 className="text-xl ">your order is confirmed</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-                nulla perspiciatis unde debitis officiis.
-              </p>
-              <button
-                onClick={toggleConfirm}
-                className="cursor-pointer text-xl text-white bg-indigo-500 py-2 px-4 mt-3 hover:bg-indigo-600"
-              >
-                OK
-              </button>
             </div>
           </div>
         </div>

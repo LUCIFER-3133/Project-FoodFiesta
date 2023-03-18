@@ -1,7 +1,5 @@
 import React from "react";
 
-import ContactHendler from "../utils/contact.php";
-
 const ContactContainer = () => {
   return (
     <section id="contact" className="md:p-16 p-8">
@@ -25,7 +23,7 @@ const ContactContainer = () => {
       <div className="mt-6">
         <div className="max-w-2xl md:m-auto m-8">
           <form
-            action={ContactHendler}
+            action="https://formspree.io/f/mzbqdkqk"
             method="POST"
             className="flex flex-col gap-3"
           >
