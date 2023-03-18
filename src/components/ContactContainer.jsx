@@ -34,7 +34,6 @@ const ContactContainer = () => {
               placeholder="Enter your name"
               name="name"
               required
-              autoComplete="off"
               className="p-2 "
             />
 
@@ -42,7 +41,6 @@ const ContactContainer = () => {
               type="email"
               name="email"
               placeholder="Enter email address"
-              autoComplete="off"
               className="p-2 "
               required
             />
