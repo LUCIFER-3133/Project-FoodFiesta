@@ -180,46 +180,47 @@ const Header = () => {
               exit={{ opacity: 0, scale: 0.6 }}
               className="w-40 flex flex-col bg-gray-50 shadow-xl rounded-lg absolute top-12 right-0 "
             >
-              {user && user.email === "lucifer3133morningstar@gmail.com" && (
-                <Link to={"/createItem"}>
-                  <p
-                    className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-textColor hover:text-indigo-600 text-base "
-                    onClick={() => setIsMenu(false)}
-                  >
-                    New Item <MdAdd />
-                  </p>
-                </Link>
-              )}
+              {(user && user.email === "lucifer3133morningstar@gmail.com") ||
+                ("saurabhleuva3133@gmail.com" && (
+                  <Link to={"/createItem"}>
+                    <p
+                      className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-textColor hover:text-indigo-600 text-base "
+                      onClick={() => setIsMenu(false)}
+                    >
+                      New Item <MdAdd />
+                    </p>
+                  </Link>
+                ))}
 
               <ul className="flex flex-col">
-                <Link
-                  to="/"
-                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2 "
+                <a
+                  href="#home"
+                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer"
                   onClick={() => setIsMenu(false)}
                 >
                   Home
-                </Link>
-                <Link
-                  to="menu"
-                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2 "
+                </a>
+                <a
+                  href="#menu"
+                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer"
                   onClick={() => setIsMenu(false)}
                 >
                   Menu
-                </Link>
-                <Link
-                  to="about us"
-                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2 "
+                </a>
+                <a
+                  href="#about us"
+                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer"
                   onClick={() => setIsMenu(false)}
                 >
                   About Us
-                </Link>
-                <Link
-                  to="contact"
-                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer hover:bg-slate-200 px-4 py-2 "
+                </a>
+                <a
+                  href="#contact"
+                  className="text-base text-headingColor hover:text-indigo-600 duration-100 transition-all ease-in-out cursor-pointer"
                   onClick={() => setIsMenu(false)}
                 >
-                  contact
-                </Link>
+                  Contact
+                </a>
               </ul>
 
               <p

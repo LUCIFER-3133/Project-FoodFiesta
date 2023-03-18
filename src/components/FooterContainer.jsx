@@ -32,18 +32,18 @@ const FooterContainer = () => {
       </div>
 
       <div className="flex flex-col md:flex-row mt-10 mb-5 justify-between text-sm md:text-lg">
-        <p className="flex text-white p-4 md:p-4 gap-1 md:gap-2 ">
-          Created By :
-          <div className="flex flex-col items-center">
+        <p className="flex flex-col md:flex-row text-white p-4 md:p-4 gap-2 md:gap-2 ">
+          <p>Created By :</p>
+          <div className="flex flex-col">
             <span>Ishan Patel</span>
             <span>Rohit Paramar</span>
             <span>Saurabh Leuva</span>
             <span>Shivam Goswami</span>
           </div>
-          | All Rights Reserved
+          <p>| All Rights Reserved</p>
         </p>
 
-        <div class="flex flex-col items-start text-white p-4 gap-2">
+        <div class="flex flex-col items-end text-white p-4 gap-2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing Deleniti,
             aliquam.

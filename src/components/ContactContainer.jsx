@@ -4,7 +4,7 @@ import ContactHendler from "../utils/contact.php";
 
 const ContactContainer = () => {
   return (
-    <section id="contact" className="p-16">
+    <section id="contact" className="md:p-16 p-8">
       <div className="w-full flex flex-col items-center justify-center">
         <p className="text-2xl font-semibold capitalize text-headingColor relative md:ml-16 ml-8 mr-auto before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-indigo-400 to-indigo-600 transition-all ease-in-out duration-100">
           Contact
