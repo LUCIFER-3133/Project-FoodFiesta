@@ -3,6 +3,7 @@ import { BiMinus, BiPlus } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
+import { RiRefreshLine } from "react-icons/ri";
 
 let items = [];
 
