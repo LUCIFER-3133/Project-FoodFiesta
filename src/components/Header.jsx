@@ -122,8 +122,9 @@ const Header = () => {
                 exit={{ opacity: 0, scale: 0.6 }}
                 className="w-40 flex flex-col bg-gray-50 shadow-xl rounded-lg absolute top-12 right-0 "
               >
-                {(user && user.email === "lucifer3133morningstar@gmail.com") ||
-                  ("saurabhleuva3133@gmail.com" && (
+                {user &&
+                  (user.email === "lucifer3133morningstar@gmail.com" ||
+                    user.email === "saurabhleuva3133@gmail.com") && (
                     <Link to={"/createItem"}>
                       <p
                         className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-indigo-600 text-base "
@@ -132,7 +133,7 @@ const Header = () => {
                         New Item <MdAdd />
                       </p>
                     </Link>
-                  ))}
+                  )}
                 <p
                   className="px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-200 transition-all duration-100 ease-in-out text-indigo-600 text-base"
                   onClick={logout}

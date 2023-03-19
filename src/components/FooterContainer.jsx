@@ -34,11 +34,19 @@ const FooterContainer = () => {
       <div className="flex flex-col md:flex-row mt-10 mb-5 justify-between text-sm md:text-lg">
         <p className="flex flex-col md:flex-row text-white p-4 md:p-4 gap-2 md:gap-2 ">
           <p>Created By :</p>
-          <div className="flex flex-col">
-            <span>Ishan Patel</span>
-            <span>Rohit Paramar</span>
-            <span>Saurabh Leuva</span>
-            <span>Shivam Goswami</span>
+          <div className="flex flex-col gap-2 text-base">
+            <span className="bg-white text-indigo-900 rounded-lg px-2">
+              Ishan Patel
+            </span>
+            <span className="bg-white text-indigo-900 rounded-lg px-2">
+              Rohit Paramar
+            </span>
+            <span className="bg-white text-indigo-900 rounded-lg px-2">
+              Saurabh Leuva
+            </span>
+            <span className="bg-white text-indigo-900 rounded-lg px-2">
+              Shivam Goswami
+            </span>
           </div>
           <p>| All Rights Reserved</p>
         </p>
