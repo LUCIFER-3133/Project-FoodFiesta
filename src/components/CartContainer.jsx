@@ -221,8 +221,8 @@ const CartContainer = () => {
                 />
                 <input
                   type="text"
-                  name="Enter your address"
-                  placeholder="address"
+                  name="address"
+                  placeholder="Enter your address"
                   className="p-2 "
                   required
                 />

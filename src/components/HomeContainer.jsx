@@ -24,7 +24,7 @@ const HomeContainer = () => {
         <p className="text-[2.5rem] lg:text-[4.5rem] font-bold tracking-wide text-headingColor">
           The Fastest Delivery in{" "}
           <span className="text-violet-600 text-[3rem] md:text-[5rem]">
-            Your City
+            Visnagar
           </span>
         </p>
 
@@ -51,7 +51,7 @@ const HomeContainer = () => {
           alt="hero-bg"
         />
 
-        <div className="w-full h-full top-0 left-0 absolute flex items-center justify-center lg:px-32 py-4 gap-4 flex-wrap ">
+        {/* <div className="w-full h-full top-0 left-0 absolute flex items-center justify-center lg:px-32 py-4 gap-4 flex-wrap ">
           {heroData &&
             heroData.map((n) => (
               <div
@@ -70,12 +70,12 @@ const HomeContainer = () => {
                   {n.decp}
                 </p>
                 <p className="text-sm font-semibold text-headingColor">
-                  <span className="text-xs text-red-600">$</span>
+                  <span className="text-lg text-red-600">₹</span>
                   {n.price}
                 </p>
               </div>
             ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
