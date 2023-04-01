@@ -113,12 +113,12 @@ const CartContainer = () => {
             <div className="w-full flex-1 bg-cartTotal rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2">
               <div className="w-full flex items-center justify-between">
                 <p className="text-gray-400">Sub Total</p>
-                <p className="text-gray-400">$ {tot}</p>
+                <p className="text-gray-400">₹ {tot}</p>
               </div>
 
               <div className="w-full flex items-center justify-between">
                 <p className="text-gray-400">Delivery</p>
-                <p className="text-gray-400">$ 0.9</p>
+                <p className="text-gray-400">₹ 0.9</p>
               </div>
 
               <div className="w-full border-b border-gray-600 my-2"></div>
@@ -126,7 +126,7 @@ const CartContainer = () => {
               <div className="w-full flex items-center justify-between">
                 <p className="text-gray-200 text-xl font-semibold">Total</p>
                 <p className="text-gray-200 text-xl font-semibold">
-                  $ {tot + 0.9}
+                  ₹ {tot + 0.9}
                 </p>
               </div>
 
@@ -187,12 +187,12 @@ const CartContainer = () => {
                 <div className="w-full flex-1 rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2">
                   <div className="w-full flex items-center justify-between">
                     <p className="text-textColor">Sub Total</p>
-                    <p className="text-textColor">$ {tot}</p>
+                    <p className="text-textColor">₹ {tot}</p>
                   </div>
 
                   <div className="w-full flex items-center justify-between">
                     <p className="text-textColor">Delivery</p>
-                    <p className="text-textColor">$ 0.9</p>
+                    <p className="text-textColor">₹ 0.9</p>
                   </div>
 
                   <div className="w-full border-b border-gray-600 my-2"></div>
@@ -202,7 +202,7 @@ const CartContainer = () => {
                       Total
                     </p>
                     <p className="text-textColor text-xl font-semibold">
-                      $ {tot + 0.9}
+                      ₹ {tot + 0.9}
                     </p>
                   </div>
                 </div>
