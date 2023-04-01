@@ -118,7 +118,7 @@ const CartContainer = () => {
 
               <div className="w-full flex items-center justify-between">
                 <p className="text-gray-400">Delivery</p>
-                <p className="text-gray-400">₹ 0.9</p>
+                <p className="text-gray-400">₹ 30</p>
               </div>
 
               <div className="w-full border-b border-gray-600 my-2"></div>
@@ -126,7 +126,7 @@ const CartContainer = () => {
               <div className="w-full flex items-center justify-between">
                 <p className="text-gray-200 text-xl font-semibold">Total</p>
                 <p className="text-gray-200 text-xl font-semibold">
-                  ₹ {tot + 0.9}
+                  ₹ {tot + 30}
                 </p>
               </div>
 
@@ -192,7 +192,7 @@ const CartContainer = () => {
 
                   <div className="w-full flex items-center justify-between">
                     <p className="text-textColor">Delivery</p>
-                    <p className="text-textColor">₹ 0.9</p>
+                    <p className="text-textColor">₹ 30</p>
                   </div>
 
                   <div className="w-full border-b border-gray-600 my-2"></div>
@@ -202,7 +202,7 @@ const CartContainer = () => {
                       Total
                     </p>
                     <p className="text-textColor text-xl font-semibold">
-                      ₹ {tot + 0.9}
+                      ₹ {tot + 30}
                     </p>
                   </div>
                 </div>
