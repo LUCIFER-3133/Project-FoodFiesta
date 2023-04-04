@@ -47,9 +47,6 @@ const FooterContainer = () => {
             <span className="bg-white text-indigo-900 rounded-lg px-2">
               Shivam Goswami
             </span>
-            <span className="bg-white text-indigo-900 rounded-lg px-2">
-              Harshvardhan Dabhi
-            </span>
           </div>
           <p>| All Rights Reserved</p>
         </p>
